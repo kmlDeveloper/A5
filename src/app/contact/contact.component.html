@@ -1,3 +1,14 @@
 <p>
   contact works!
 </p>
+
+<div class="form-group">
+  <div class="col-md-4" *ngFor="let contact of allContact">
+    <div class="card">
+      <div class="container">
+        <h4><b>No :{{contact.id}}</b></h4>
+        <h4><b>{{contact.title.slice(1,6)}}</b></h4>
+      </div>
+    </div>
+  </div>
+</div>
