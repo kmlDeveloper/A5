@@ -1,0 +1,21 @@
+<h2>
+
+  User</h2>
+
+<form>
+  <h1>No of Contact :{{noOfContact}}</h1>
+  <input type="text" class="txt" name="name" [(ngModel)]="intialTxt">
+  <input type="submit" (click)="addConatct()">
+</form>
+
+
+<br><br>
+<div class="form-group">
+  <div class="col-md-4" *ngFor="let contact of contacts">
+    <div class="card">
+      <div class="container">
+        <h4><b>{{contact}}</b></h4>
+      </div>
+    </div>
+  </div>
+</div>
